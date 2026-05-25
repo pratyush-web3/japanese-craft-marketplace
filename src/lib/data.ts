@@ -12,7 +12,7 @@ export const SITE = {
   name: "和巧 — Wakō",
   tagline: "日本の手仕事を、世界の食卓へ。",
   description:
-    "日本各地の職人が手がける器・刃物・木工・染織。一点ずつ、手のぬくもりとともにお届けする工芸のマーケットプレイス。",
+    "職人に会って、話を聞いて、使ってみて良いと思えたものだけを集めています。毎日の暮らしに、長く使える工芸を。",
 };
 
 export type Category = {
@@ -24,14 +24,14 @@ export type Category = {
 };
 
 export const categories: Category[] = [
-  { slug: "pottery", name: "陶磁器", romaji: "Tōjiki", blurb: "土と火が生む、唯一無二の器。", image: pottery },
-  { slug: "woodwork", name: "木工", romaji: "Mokkō", blurb: "木目に宿る、静かな時間。", image: woodwork },
-  { slug: "knives", name: "包丁", romaji: "Hōchō", blurb: "鍛冶の技、刃に込めた一生。", image: knife },
-  { slug: "textile", name: "染織", romaji: "Senshoku", blurb: "藍と糸が描く、土地の記憶。", image: textile },
-  { slug: "tea", name: "茶道具", romaji: "Chadōgu", blurb: "一椀のしずけさを、暮らしへ。", image: teaSet },
-  { slug: "bamboo", name: "竹細工", romaji: "Takezaiku", blurb: "編む手仕事、しなやかな美。", image: bamboo },
-  { slug: "decor", name: "手仕事の道具", romaji: "Tezukuri", blurb: "手のあとが、住まいに息づく。", image: pottery },
-  { slug: "kitchen", name: "台所道具", romaji: "Daidokoro", blurb: "毎日に寄り添う、本物の道具。", image: teaSet },
+  { slug: "pottery", name: "陶磁器", romaji: "Tōjiki", blurb: "持ったときの重みまで、ちゃんと気持ちいい器。", image: pottery },
+  { slug: "woodwork", name: "木工", romaji: "Mokkō", blurb: "手に馴染む木の道具を、長く使えるかたちで。", image: woodwork },
+  { slug: "knives", name: "包丁", romaji: "Hōchō", blurb: "切れ味だけじゃなく、手元の安心感も大切に。", image: knife },
+  { slug: "textile", name: "染織", romaji: "Senshoku", blurb: "色の深さや布の揺れに、土地の空気が残ります。", image: textile },
+  { slug: "tea", name: "茶道具", romaji: "Chadōgu", blurb: "お茶の時間を、少しだけ丁寧にしてくれる道具。", image: teaSet },
+  { slug: "bamboo", name: "竹細工", romaji: "Takezaiku", blurb: "軽さと強さが同居する、素直な手仕事です。", image: bamboo },
+  { slug: "decor", name: "手仕事の道具", romaji: "Tezukuri", blurb: "置いてあるだけで、部屋の空気がやわらぐもの。", image: pottery },
+  { slug: "kitchen", name: "台所道具", romaji: "Daidokoro", blurb: "毎日つかうからこそ、少し良いものを。", image: teaSet },
 ];
 
 export type Product = {
@@ -58,7 +58,7 @@ export const products: Product[] = [
     category: "tea",
     image: teaSet,
     story:
-      "出雲の土を轆轤で挽き、化粧土をかけて窯変の炎にゆだねた一碗。器の表面に浮かぶ白いかすれは、雪が静かに積もる夜の風景を思わせます。",
+      "出雲の土をひいて、薄く化粧土を重ね、薪の炎にゆだねた茶碗です。白いかすれの景色がやさしく、朝の湯気によく似合います。",
     material: "出雲粘土／灰釉",
     size: "口径 12cm × 高さ 7.5cm",
     edition: "一点物",
@@ -72,7 +72,7 @@ export const products: Product[] = [
     category: "knives",
     image: knife,
     story:
-      "堺打刃物五代目、井上鉄之助による手鍛え三徳。芯材に青紙二号、地金に軟鉄を合わせた本霞造り。柄は朴の木と水牛角を継ぎ、永く手に馴染みます。",
+      "堺の鍛冶場で一本ずつ打った三徳包丁です。重すぎず、軽すぎず、毎日の料理で『ちょうどいい』と思えるバランスに仕上げています。",
     material: "青紙二号鋼／朴柄",
     size: "刃渡り 165mm",
     edition: "受注鍛造",
@@ -86,7 +86,7 @@ export const products: Product[] = [
     category: "woodwork",
     image: woodwork,
     story:
-      "樹齢百年を越える欅の一枚板を、轆轤師の手で挽き、漆を二十回拭き重ねました。年輪のうねりがそのまま器のかたちに残ります。",
+      "長く使える盆がほしくて、欅の一枚板を漆で仕上げました。派手ではありませんが、日々の茶器や器をのせると、自然と落ち着く一枚です。",
     material: "欅／生漆",
     size: "径 36cm × 厚 1.8cm",
     edition: "限定 12 点",
@@ -100,7 +100,7 @@ export const products: Product[] = [
     category: "textile",
     image: textile,
     story:
-      "阿波藍を百二十日かけて発酵させた染液で、麻の生地を七度くぐらせています。色は使うほどに澄み、家の境界を静かに分かちます。",
+      "阿波藍で染めた麻の暖簾です。光の入り方で色の見え方が少し変わるので、朝と夕方で表情が違って見えます。",
     material: "麻 100%／天然藍",
     size: "85cm × 140cm",
     edition: "受注染め",
@@ -114,7 +114,7 @@ export const products: Product[] = [
     category: "pottery",
     image: pottery,
     story:
-      "京の楽焼の系譜を継ぐ作家による黒楽。土を手で抜き、ヘラで削り、低火度の窯で一碗ずつ焼き上げます。掌に静かにおさまる重さ。",
+      "手に取ると、すっと気持ちが落ち着く黒楽茶碗です。茶席でも、家でひとりお茶を淹れるときにも、静かな時間をつくってくれます。",
     material: "聚楽土／黒釉",
     size: "口径 11.5cm × 高さ 8cm",
     edition: "一点物",
@@ -128,7 +128,7 @@ export const products: Product[] = [
     category: "bamboo",
     image: bamboo,
     story:
-      "別府の真竹を、ひごに割いて六ツ目に編み上げた花籠。竹の弾力をいかし、軽やかな線が空間に余白を生みます。",
+      "別府の真竹を使った花籠です。軽くて扱いやすく、花を一輪だけ入れても、ちゃんと絵になるのがいいところです。",
     material: "真竹",
     size: "径 24cm × 高さ 30cm",
     edition: "限定 8 点",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     category: "kitchen",
     image: woodwork,
     story:
-      "尾州の山で育った樹齢百五十年の檜から、一枚板の俎板を仕立てます。柔らかな木肌が刃を受け止め、清々しい香りが台所を満たします。",
+      "尾州檜の一枚板でつくった俎板です。包丁の当たりがやわらかく、使い終わったあとも、木の香りが台所に残ります。",
     material: "尾州檜",
     size: "42cm × 24cm × 厚 3cm",
     edition: "受注製作",
@@ -156,7 +156,7 @@ export const products: Product[] = [
     category: "decor",
     image: pottery,
     story:
-      "焼成中に裂けた器を、漆と金で継ぎ直しました。傷もまた景色とする、日本の美意識をかたちにしています。",
+      "焼成の途中で入ったひびを、漆と金で直した一輪挿しです。欠けたままでは終わらせず、もう一度使えるようにした器です。",
     material: "陶土／漆／純金粉",
     size: "高さ 18cm",
     edition: "一点物",
@@ -170,7 +170,7 @@ export const products: Product[] = [
     category: "tea",
     image: teaSet,
     story:
-      "南部の砂鉄を鋳込み、霰の文様を一粒ずつ手で押し起こした鉄瓶。湯はまろやかに、鉄分を含み、茶の味を整えます。",
+      "南部鉄器の鉄瓶です。朝の湯を沸かすだけでも気分が変わるので、家でお茶を飲む時間が少し楽しみになります。",
     material: "砂鉄／木炭",
     size: "容量 1.2L",
     edition: "限定 20 点",
@@ -196,8 +196,8 @@ export const artisans: Artisan[] = [
     region: "島根県・出雲",
     years: 38,
     portrait: artisan1,
-    bio: "出雲の山あいに窯を構えて三十八年。地元の粘土を掘り、灰を集め、薪窯のみで焼成を続けている。",
-    philosophy: "「土に問い、火に委ねる」。器は人がつくるのではなく、土と火が育ててくれるものだと考えています。",
+    bio: "出雲の山あいで三十八年、薪窯だけで焼き続けてきました。粘土を掘るところから焼き上げるまで、今もほとんど一人で手を動かしています。",
+    philosophy: "器は、こちらが思った通りにはなりません。そのぶん、出来上がったときにちゃんと驚きがあるのが面白いところです。",
   },
   {
     slug: "fujisaki-suzu",
@@ -206,8 +206,8 @@ export const artisans: Artisan[] = [
     region: "徳島県・上板",
     years: 22,
     portrait: artisan2,
-    bio: "祖父の藍甕を受け継ぎ、阿波藍の天然発酵建てを守る。染色から仕立てまでを一人で行う。",
-    philosophy: "藍は生きものです。私の仕事は染めることではなく、藍の機嫌を整えることだと思っています。",
+    bio: "祖父の藍甕を受け継いで、阿波藍の天然発酵建てを守っています。染めるだけでなく、布に触れるところまで自分で見ています。",
+    philosophy: "藍は毎日少しずつ表情が違います。こちらが急がず、様子を見ながら付き合うのがいちばん大事です。",
   },
   {
     slug: "inoue-tetsunosuke",
@@ -216,8 +216,8 @@ export const artisans: Artisan[] = [
     region: "大阪府・堺",
     years: 17,
     portrait: artisan3,
-    bio: "堺打刃物の名門に生まれ、五代目として鍛冶場を継ぐ。料理人のための包丁を一本ずつ手鍛えしている。",
-    philosophy: "包丁は道具です。使う人の手の中で、はじめて完成すると信じています。",
+    bio: "堺打刃物の鍛冶場で育ち、五代目として包丁を打っています。料理人の要望を聞きながら、一本ずつ仕上げています。",
+    philosophy: "包丁は、使う人の料理に合ってこそ意味があります。店で見たときより、台所に入ってからが本番です。",
   },
 ];
 

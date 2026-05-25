@@ -31,9 +31,9 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-[1600px] px-6 lg:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <Link to="/" className="group flex items-baseline gap-3">
-            <span className="font-serif text-2xl tracking-tight text-ink">和巧</span>
+            <span className="font-serif text-xl sm:text-2xl tracking-tight text-ink">和巧</span>
             <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground hidden sm:inline">
               Wakō Marketplace
             </span>
@@ -61,7 +61,7 @@ export function Header() {
             </button>
             <button
               aria-label="メニュー"
-              className="lg:hidden text-ink"
+              className="lg:hidden text-ink p-2 -mr-2"
               onClick={() => setOpen(!open)}
             >
               {open ? <X size={22} /> : <Menu size={22} />}
@@ -71,17 +71,17 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-cream border-t border-border animate-fade-in">
-          <nav className="flex flex-col px-6 py-8 gap-6">
+        <div className="lg:hidden bg-cream border-t border-border animate-fade-in max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <nav className="flex flex-col px-6 py-8 gap-4">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="flex items-baseline justify-between border-b border-border/60 pb-3"
+                className="flex items-baseline justify-between rounded-lg border border-border/60 px-4 py-4 bg-background/40"
               >
-                <span className="font-serif text-lg text-ink">{item.label}</span>
-                <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
+                <span className="font-serif text-base sm:text-lg text-ink">{item.label}</span>
+                <span className="text-[10px] uppercase tracking-widest text-muted-foreground ml-4 text-right">
                   {item.en}
                 </span>
               </Link>

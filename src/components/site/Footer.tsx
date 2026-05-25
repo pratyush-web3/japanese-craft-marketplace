@@ -99,7 +99,7 @@ export function Footer() {
 
         <div className="mt-20 pt-8 border-t border-cream/15 flex flex-col md:flex-row justify-between gap-4 text-xs text-cream/45">
           <div>© 2025 Wakō Craft Marketplace. すべての権利は職人に帰属します。</div>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
             <span>Instagram</span>
             <span>YouTube</span>
             <span>Pinterest</span>

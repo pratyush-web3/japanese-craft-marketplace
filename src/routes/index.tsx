@@ -51,7 +51,7 @@ function Home() {
 
 function Hero() {
   return (
-    <section className="relative -mt-20 h-[100vh] min-h-[760px] overflow-hidden grain">
+    <section className="relative -mt-20 h-[92svh] min-h-[620px] sm:min-h-[760px] overflow-hidden grain">
       <div className="absolute inset-0">
         <img
           src={hero}
@@ -63,34 +63,34 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-sumi/40 via-sumi/30 to-sumi/80" />
       </div>
 
-      <div className="relative h-full flex flex-col justify-end pb-16 sm:pb-20 lg:pb-24 px-6 lg:px-12">
+      <div className="relative h-full flex flex-col justify-end pb-12 sm:pb-20 lg:pb-24 px-4 sm:px-6 lg:px-12">
         <div className="mx-auto max-w-[1600px] w-full">
-          <div className="flex items-end justify-between flex-wrap gap-8 lg:gap-10">
+          <div className="flex items-end justify-between flex-wrap gap-6 lg:gap-10">
             <div className="max-w-3xl">
-              <div className="text-[11px] uppercase tracking-[0.4em] text-gold animate-fade-up">
+              <div className="text-[10px] sm:text-[11px] uppercase tracking-[0.32em] sm:tracking-[0.4em] text-gold animate-fade-up">
                 — Est. 京都 二〇二〇
               </div>
               <h1
-                className="mt-5 sm:mt-6 font-serif text-cream text-4xl sm:text-5xl md:text-7xl lg:text-[88px] leading-[1.02] text-balance animate-fade-up"
+                className="mt-5 sm:mt-6 font-serif text-cream text-3xl sm:text-5xl md:text-7xl lg:text-[88px] leading-[1.02] text-balance animate-fade-up"
                 style={{ animationDelay: "120ms" }}
               >
-                土に問い、火に委ねる。
+                土に問い、火に任せる。
                 <br />
-                <span className="italic font-normal text-gold/95">手のあと</span>を、暮らしへ。
+                <span className="italic font-normal text-gold/95">手の跡</span>を、暮らしへ。
               </h1>
               <p
-                className="mt-8 text-cream/75 text-base md:text-lg max-w-xl leading-relaxed animate-fade-up"
+                className="mt-6 sm:mt-8 text-cream/75 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed animate-fade-up"
                 style={{ animationDelay: "240ms" }}
               >
                 {SITE.description}
               </p>
               <div
-                className="mt-9 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-fade-up"
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-fade-up"
                 style={{ animationDelay: "360ms" }}
               >
                 <Link
                   to="/marketplace"
-                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-cream px-8 py-4 text-sm tracking-wider text-ink transition-colors duration-500 hover:bg-gold"
+                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full bg-cream px-6 sm:px-8 py-3.5 sm:py-4 text-sm tracking-wider text-ink transition-colors duration-500 hover:bg-gold"
                 >
                   工芸品を見る
                   <ArrowUpRight
@@ -100,7 +100,7 @@ function Hero() {
                 </Link>
                 <Link
                   to="/artisans"
-                  className="inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-cream/40 px-8 py-4 text-sm tracking-wider text-cream transition hover:bg-cream/10"
+                  className="inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-cream/40 px-6 sm:px-8 py-3.5 sm:py-4 text-sm tracking-wider text-cream transition hover:bg-cream/10"
                 >
                   職人に出会う
                 </Link>
@@ -167,7 +167,7 @@ function Categories() {
               — 01 / 工芸の分類
             </div>
             <h2 className="font-serif text-4xl md:text-6xl text-ink leading-tight text-balance">
-              八つの手仕事、ひとつの哲学。
+              毎日の手元に、ちゃんと使える工芸を。
             </h2>
           </div>
           <Link
@@ -222,11 +222,11 @@ function FeaturedProducts() {
               — 02 / 今月の作品
             </div>
             <h2 className="font-serif text-4xl md:text-6xl leading-tight text-balance">
-              職人が、今いちばん届けたいもの。
+              職人が、いま本当にすすめたいもの。
             </h2>
           </div>
           <p className="lg:col-span-4 lg:col-start-9 text-muted-foreground leading-relaxed">
-            季節と土地のうつろいに合わせて、編集部が八百点を超える在庫から厳選した、今月の一品。
+            季節や使い心地を見ながら、編集部が一品ずつ選びました。写真だけではわからない質感まで、手に取るように伝えたいと思っています。
           </p>
         </div>
 
