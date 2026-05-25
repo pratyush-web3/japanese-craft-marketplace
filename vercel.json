@@ -2,10 +2,15 @@
   "buildCommand": "bun run build",
   "outputDirectory": "dist/client",
   "framework": "vite",
-  "rewrites": [
+  "functions": {
+    "app/server.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/api/server"
     }
   ]
 }
