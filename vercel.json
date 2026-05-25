@@ -2,11 +2,6 @@
   "buildCommand": "bun run build",
   "outputDirectory": "dist/client",
   "framework": "vite",
-  "functions": {
-    "app/server.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "routes": [
     {
       "src": "/(.*)",
